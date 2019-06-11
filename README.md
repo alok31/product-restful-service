@@ -26,10 +26,13 @@ This app has been hosted on Heroku so can be directly accessed using URL - https
 Build and run the application locally:
 1. Please clone or download the source code from Github. 
 2. Unzip the downloaded source code and go to extracted folder 
-3. Start the application using - './gradlew bootrun' 
-4. This springboot application will be up and running. 
-5. Please verify using application landing Endpoint - http://localhost:8080/
+3. Please build the app using './gradlew clean build'. JaCoCo will generate code coverage report. It can found here - /build/reports/tests/test/index.html
+4. Start the application using - './gradlew bootrun'
+5. This springboot application will be up and running. 
+6. Please verify using application landing Endpoint - http://localhost:8080/.
 
+Testing tool Needed:
+Get APIs can be directly called from browser. POST/PUT API can be tested using Postman or terminal (curl command can be used)
 
 APIs Used in this Application
 1. Get Aggregated Product Info (Product name and price) by giving id
@@ -51,9 +54,3 @@ APIs Used in this Application
 		GET http://localhost:8080/api/v1/products/{id}/price
    		Request - curl http://localhost:8080/api/v1/products/13860428/price
 		Response - {"id":13860428,"currentPrice":1000.99,"currencyCode":"USD"}
-
-Code Coverage: 
-JaCoCo tool is being used to get coverage report. Please build the app using './gradle clean build'. Report can found here - /build/reports/tests/test/index.html
-
-Testing tool Needed:
-Get APIs can be directly called from browser. POST/PUT API can be tested using Postman or terminal (curl command can be used)
