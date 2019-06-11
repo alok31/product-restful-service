@@ -53,7 +53,7 @@ APIs Used in this Application
 		Response - {"id":13860428,"currentPrice":1000.99,"currencyCode":"USD"}
 
 Code Coverage: 
-JACoCo tool is being used to get coverage report. Please build the app using './gradle clean build'. Report can found here - /build/reports/tests/test/index.html
+JaCoCo tool is being used to get coverage report. Please build the app using './gradle clean build'. Report can found here - /build/reports/tests/test/index.html
 
 Testing tool Needed:
 Get APIs can be directly called from browser. POST/PUT API can be tested using Postman or terminal (curl command can be used)
