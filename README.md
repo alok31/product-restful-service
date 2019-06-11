@@ -1,7 +1,7 @@
 # product-restful-service
 Application provides aggregated product Information gathered from different sources for given product ID. 
 
-This application consist 3 layers:
+This application consists below layers:
 1. Controller layer for endpoints 
      -ProductController
 2. Service layer for all business needs
